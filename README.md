@@ -8,7 +8,7 @@ Implementation of a tracker combining [SiamFC](https://www.robots.ox.ac.uk/~luca
 <img src="img/precision.png" width=50%><img src="img/success.png" width=50%>   
 ## Requirements
 + Python 3.6+
-+ PyTorch
++ PyTorch 1.7
 + GOT-10k toolkit
 + OpenCV
 + pyCFTrackers
