@@ -1,5 +1,6 @@
 # Combining SiamFC and CF tracker
-Implementation of a tracker combining [SiamFC](https://www.robots.ox.ac.uk/~luca/siamese-fc.html) and Correlation Filter based tracker(using [pyCFTrackers](https://github.com/fengyang95/pyCFTrackers)).
+Implementation of a tracker combining [SiamFC](https://www.robots.ox.ac.uk/~luca/siamese-fc.html) and Correlation Filter based tracker(using [pyCFTrackers](https://github.com/fengyang95/pyCFTrackers)).  
+#### This project is still in its infancy, so if you have any suggestions or comments, please let me know.
 ## Framework
 <img src="img/framework.png">  
 
@@ -38,7 +39,7 @@ The "--tracker" can be selected from "SiamFC", "Staple", and "SiamFC+CF".
 This is a combination of SiamFC and [Staple](https://www.robots.ox.ac.uk/~luca/staple.html).  
 By rearranging the code, you can use CF trackers other than Staple in pyCFTrackers.  
 
-## Evaluate Benchmark
+## Evaluation in benchmark
 ```bash
 python tools/test.py
 ```
