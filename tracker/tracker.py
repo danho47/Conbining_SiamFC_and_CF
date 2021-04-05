@@ -210,7 +210,7 @@ class TrackerModel(Tracker):
         loc = np.unravel_index(response.argmax(), response.shape)
         apce = self.APCE(response)
         psr = self.PSR(response)
-        score1 = apce+psr
+        score = 0.9*apce + 0.1*psr
         #print('SiamFC :',apce)
 
         #Corrrelation Filter
@@ -218,7 +218,7 @@ class TrackerModel(Tracker):
             region = self.cf.update(img)
             apce_cf = self.APCE(self.cf.score)
             psr_cf = self.PSR(self.cf.score)
-            score2 = apce_cf + psr_cf
+            score_cf = 0.9*apce_cf + 0.1*psr_cf
             #print('CF :',apce_cfps)
 
 
@@ -245,8 +245,8 @@ class TrackerModel(Tracker):
        
         # Judging Confidence
         if tracker == 'SiamFC+CF':
-            if psr <3 or apce < 5:
-                if score2 > score1:
+            if score<5.0:
+                if score_cf > score:
                     box = region
                     self.center = np.array([box[1]+(box[3]/2),
                                             box[0]+(box[2]/2)])

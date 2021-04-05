@@ -1,6 +1,6 @@
 # Combining SiamFC and CF tracker
 Implementation of a tracker combining [SiamFC](https://www.robots.ox.ac.uk/~luca/siamese-fc.html) and Correlation Filter based tracker(using [pyCFTrackers](https://github.com/fengyang95/pyCFTrackers)).  
-#### This project is still in its infancy, so if you have any suggestions or comments, please let me know.
+
 ## Framework
 <img src="img/framework.png">  
 
