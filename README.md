@@ -2,11 +2,11 @@
 Implementation of a tracker combining [SiamFC](https://www.robots.ox.ac.uk/~luca/siamese-fc.html) and Correlation Filter based tracker(using [pyCFTrackers](https://github.com/fengyang95/pyCFTrackers)).  
 
 ## Framework
-<img src="img/framework.png">  
+<img src="img/framework.pdf">  
 
 ## Performance
 ### Benchmark:[OTB2015](http://cvlab.hanyang.ac.kr/tracker_benchmark/index.html)
-<img src="img/precision.png" width=50%><img src="img/success.png" width=50%>   
+<img src="img/report.png" >   
 ## Requirements
 + Python 3.6+
 + PyTorch 1.7
